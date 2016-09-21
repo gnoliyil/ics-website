@@ -1,26 +1,26 @@
 ﻿body
 {
-	background-color: #555555; 
-	font-family: "Segoe UI", "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
-	font-size: 12pt; 
-	
-	min-width: 1024px; 
+	background-color: #555555;
+	font-family: "Helvetica Neue", "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+	font-size: 12pt;
+	line-height: 1.8em;
+	min-width: 1024px;
 }
 
 @media only screen and (min-width : 1224px) {
 	body
 	{
-		width: 50%; 
-		min-width: 600px; 
-		margin: 0 25% 0 25%;
+		width: 60%;
+		min-width: 600px;
+		margin: 0 20% 0 20%;
 	}
 }
 
 @media only screen and (max-device-width : 1224px) {
 	body
 	{
-		width: 100%; 
-		margin: 0 0 0 0;
+		width: 90%;
+		margin: 0 5% 0 5%;
 	}
 }
 
@@ -31,63 +31,63 @@
 
 .heading h1
 {
-	color: #eeeeee; 
+	color: #eeeeee;
 }
 
 .heading a
 {
 	text-decoration: none;
-	color: #eeeeee; 
+	color: #eeeeee;
 }
 
 .main
 {
-	padding: 2em ; 
-	background-color: #aaaaaa; 
+	padding: 2em ;
+	background-color: #aaaaaa;
 }
 
 .main a
 {
-	text-decoration: none; 
-	color: #777; 
+	text-decoration: none;
+	color: #777;
 }
 
 .main a:link
 {
-	text-shadow: 0 0 1px #777; 
+	text-shadow: 0 0 1px #777;
 }
 
 .main a:hover
 {
 	color:#337;
-	text-shadow: 0 0 1px #337; 
+	text-shadow: 0 0 1px #337;
 }
 
 .main h2
 {
-	margin: 0.2em; 
+	margin: 0.2em;
 	margin-left: 0;
 }
 
 .articles
 {
 	width: 100%;
-	float: left; 
+	float: left;
 }
 
 .article
 {
-	padding: 1em; 
-	margin: 1em 0.5em 1em 0.5em; 
-	background-color: #eeeeee; 
-	box-shadow: 0 0 15px #777; 
+	padding: 1em;
+	margin: 1em 0.5em 1em 0.5em;
+	background-color: #eeeeee;
+	box-shadow: 0 0 15px #777;
 }
 
 .article blockquote
 {
-	margin: 1em; 
-	padding: 1em; 
-	background-color: #dddddd; 
+	margin: 1em;
+	padding: 1em;
+	background-color: #dddddd;
 	quotes:"\201C""\201D""\2018""\2019";
 }
 
@@ -107,13 +107,13 @@
 
 .article thead tr td
 {
-	background-color:#ddd; 
+	background-color:#ddd;
 	font-weight:bold;
 }
 
 .article tr:hover
 {
-	background-color:#ccc; 
+	background-color:#ccc;
 }
 
 .article hr
@@ -126,13 +126,13 @@
 
 .navbar
 {
-	width: 25%;  
-	float: right; 
-	
-	padding: 1em; 
-	margin: 1em 0em 1em 0.5em ; 
-	background-color: #eeeeee; 
-	box-shadow: 0 0 15px #777; 
+	width: 25%;
+	float: right;
+
+	padding: 1em;
+	margin: 1em 0em 1em 0.5em ;
+	background-color: #eeeeee;
+	box-shadow: 0 0 15px #777;
 }
 
 .navbar ul
@@ -155,47 +155,83 @@
 
 .footer
 {
-	text-align:center; 
-	color: #ddd; 
+	text-align:center;
+	color: #ddd;
 }
 
 .footer a
 {
 	color: #bbb;
-	text-decoration: none; 
+	text-decoration: none;
 }
 
 .button{
-	display: inline-block; 
-	vertical-align: baseline; 
-	margin: 5px 5px 5px 5px; 
-	outline: none; 
-	padding: .5em 2em .55em; 
-	cursor: pointer; 
-	text-align: center; 
-	text-shadow: 0 1px 1px rgba(0,0,0,.3); 
-	text-decoration: none; 
-	color: #000; 
-	-webkit-border-radius: .5em; 
-	-moz-border-radius: .5em; 
-	border:1px rgba(0, 0, 0, 0.1) solid; 
-	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2); 
-	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2); 
-	box-shadow: 3px 3px 5px rgba(0,0,0,.1); 
+	display: inline-block;
+	vertical-align: baseline;
+	margin: 5px 5px 5px 5px;
+	outline: none;
+	padding: .5em 2em .55em;
+	cursor: pointer;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	text-decoration: none;
+	color: #000;
+	-webkit-border-radius: .5em;
+	-moz-border-radius: .5em;
+	border:1px rgba(0, 0, 0, 0.1) solid;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 3px 3px 5px rgba(0,0,0,.1);
 }
 .button:hover{
-	background-color: rgba(0, 0, 0, 0.1); 
-	box-shadow: 0 0 0 ; 
+	background-color: rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 0 ;
 }
 .button:active{
-	background-color: rgba(0, 0, 0, 0.6); 
-	box-shadow: 0 0 0 ; 
-	color: #ffffff; 
-}	
+	background-color: rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 0 ;
+	color: #ffffff;
+}
 .button.long
 {
-	width: 90%; 
-	text-align: left; 
-	margin: 0px; 
+	width: 90%;
+	text-align: left;
+	margin: 0px;
 	padding: 0.3em;
+}
+
+pre {
+		font-family: "Courier 10 Pitch", Courier, monospace;
+		font-size: 95%;
+		line-height: 140%;
+		white-space: pre;
+		white-space: pre-wrap;
+		white-space: -moz-pre-wrap;
+		white-space: -o-pre-wrap;
+}
+
+code {
+	  padding: 0.2em 0.5em;
+		font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+		font-size: 95%;
+		line-height: 140%;
+		white-space: pre;
+		white-space: pre-wrap;
+		white-space: -moz-pre-wrap;
+		white-space: -o-pre-wrap;
+		background: #f4f4f4;
+		border: 1px solid #bbbbbb;
+}
+
+.article pre code {
+		display: block;
+		padding: 0.5em 1em;
+		border: 1px solid #aaaaaa;
+}
+
+.quotation {
+		display: block;
+		margin: 0.5em;
+		padding: 0.5em 1em;
+		border: 1px solid #bbbbbb;
 }

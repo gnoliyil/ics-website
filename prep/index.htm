@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<link href="../css/main.css" rel="stylesheet" />
+<title>Li Yilong</title>
+</head>
+
+<body>
+<div class="container">
+	<div class="heading">
+		<h1>《计算机系统导论》小班13班</h1>
+	</div>
+	<div class="main">
+		<div class="articles">
+
+			<div class="article" id="article-bar">
+				<p>
+				<a class="button" href="../">首页</a>
+				<a class="button" href="#article-ics9">ICS9服务器</a>
+				<a class="button" href="#article-autolab">Autolab</a>
+				<a class="button" href="#article-linux">Linux 使用</a>
+				</p>
+			</div>
+
+			<div class="article" id="article-ics9">
+				<h2>ICS9 服务器访问方法</h2>
+				<p><strong>ICS9 服务器地址: </strong>ics9.pku.edu.cn (162.105.31.220), 端口1122, 仅可使用校内IP（或VPN）访问. </p>
+				<p><strong>登录用户名: </strong>班号（M） + 学号（1500012xxx），例：M1500013019</p>
+				<p><strong>默认密码: </strong>jus<script></script>tdoIT. 请登录后<strong>立刻使用 <code>passwd</code> </strong>命令修改密码!</p>
+				<hr>
+				<p><strong>远程访问: </strong>Windows 环境下, 可以使用 PuTTY (个人推荐 ExtraPuTTY, 下载地址在 这里); Linux/Mac 环境下直接通过 <code>ssh</code> 登录. </p>
+				<pre><code>ssh -p 1122 username@ics9.pku.edu.cn</code></pre>
+				<p><strong>文件传输: </strong>Windows 环境下, 可以使用 <a href="http://www.xdowns.com/soft/1/98/2008/Soft_47007.html">WinSCP</a> 等工具通过 SCP 传输. 填写地址, 端口, 用户名即可. Linux/Mac 环境下请直接使用 <code>scp</code> 命令:
+				</p>
+				<pre><code>scp -P 1122 (filename 或 -r dirname) username@ics9.pku.edu.cn:~/[dir]</code></pre>
+			</div>
+
+			<div class="article" id="article-autolab">
+				<h2>Autolab</h2>
+				<p>在校园网环境下访问 https://ics16.pku.edu.cn/ 进入 Autolab. </p>
+				<p>不知道自己密码的同学，请手动重置密码. </p>
+			</div>
+
+			<div class="article" id="article-linux">
+				<h2>Linux 安装与使用</h2>
+				<p>It is highly recommended that all students should install Linux on their computer and write all your programs on Linux. </p>
+				<h3>Installation of Linux</h3>
+				<ul>
+					<li><strong>Install as dual boot</strong> only if you know very well about disk partitioning,
+						or it is very likely that you may ruin all your data on your hard disk in seconds. </li>
+					<li><strong>Preferred distribution: </strong>Ubuntu GNOME 16.04
+						<ul><li>In fact, any distro released after 2014 is okay.</li></ul></li>
+					<li><strong>Virtual machine: </strong>VirtualBox (Freeware) / VMware (proprietary)	are preferred. </li>
+					<li>One may find tutorials about installing Ubuntu on VirtualBox <a href="http://askubuntu.com/questions/142549/how-to-install-ubuntu-on-virtualbox">here</a> (Global network access is required).
+				</ul>
+				<h3>Install necessary software packages</h3>
+				<ul>
+					<li>In order to download using CERNET free address, one should use software sources located in China mainland:
+						<ul>
+							<li>In "Activities", search "terminal" and open the Linux terminal. </li>
+							<li>Type in the following command: <code>sudo nano /etc/apt/sources.list</code>
+								<div class="quotation">Note: <code>sudo command</code> means to run the command using administrator(root) privilege.
+								<br>GNU/Nano (nano) is a simple command-line based text editor in Linux. </div>
+							</li>
+							<li>Replace all the server names (like security.ubuntu.com, cn.archive.ubuntu.com) to one of the following:
+								<ul>
+								<li>Tsinghua University: mirrors.tuna.tsinghua.edu.cn	</li>
+								<li>University of Technology and Science of China: mirrors.ustc.edu.cn</li>
+								<li>Aliyun Cloud: mirrors.aliyun.com</li>
+								<li>Netease: mirrors.163.com</li>
+							</ul>
+							</li>
+							<li>Press <code>Ctrl+X</code>, <code>Y</code> to save and exit. </li>
+							<li>Type in the following command: <code>sudo apt-get update</code>
+								<div class="quotation">Note: <code>apt-get</code> is a package manager (including software installation, software dependency management) widely used in Debian-based (like Ubuntu) Linux. </div>
+							</li>
+						</ul>
+					</li>
+					<li>Install compilers and other tools to build a program:
+						<pre><code>sudo apt-get install build-essential gcc-multilib</code></pre>
+					</li>
+					<li>Install the <code>vim</code> editor:
+						<pre><code>sudo apt-get install vim</code></pre>
+					</li>
+				</ul>
+			</div>
+
+			<div class="article" id="article-contact">
+				<h2>联系方式</h2>
+				<p><img src="images/liyl.jpg" alt="Li Yilong" width="60%"></img></p>
+				<p><strong>李一龙</strong></p>
+				<p>电子邮件: <span id="vo1jnm">yilong(ar213)pku(21km1)edu(21km1)(china)</span></p>
+				<p>QQ: <span id="qkw1m"></span></p>
+			</div>
+		</div>
+
+		<script language="javascript">
+			document.getElementById("qkw1m").innerHTML = 181407253 << 1;
+			vo1jnm = document.getElementById("vo1jnm").innerHTML;
+			vo1jnm = vo1jnm.replace('(ar213)',String.fromCharCode(64)).replace('(21km1)','.').replace('(21km1)','.').replace('(china)','cn');
+			document.getElementById("vo1jnm").innerHTML = vo1jnm;
+		</script>
+		<!--div class="navbar">
+			<h2>Related Links</h2>
+			<ul>
+				<li><a href="http://course.pku.edu.cn">北京大学教学网</a></li>
+				<li><a href="mailto:">联系助教</a></li>
+			</ul>
+		</div-->
+	</div>
+	<div class="footer">
+		<p> (c) Li Yilong, 2016 – 2017. </p>
+	</div>
+</div>
+</body>
+</html>
