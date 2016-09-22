@@ -83,8 +83,68 @@
 					<li>Install the <code>vim</code> editor:
 						<pre><code>sudo apt-get install vim</code></pre>
 					</li>
+					<li>Install the <code>gdb</code> debugger:
+						<pre><code>sudo apt-get install gdb</code></pre>
+					</li>
 				</ul>
+				<h3>Linux(Unix) File System</h3>
+				<p>Unix-like operating systems create a virtual file system, which makes all the files on all the devices appear to exist in a single hierarchy.
+					Different from Windows, all paths of directories and files begin with a '/', the root directory. </p>
+				<p>Softwares, headers and libraries are usually located in the /usr directory, to which the root user owns the access. </p>
+				<p>The home directory (usually /home/username) is the directory which you have full access to. </p>
+				<h4><code>cd</code> command: Change working directory</h4>
+				<p>In a Linux shell, you can use <code>cd &lt;path&gt;</code> to change your current working directory (<code>$PWD</code>)
+					(you can use <code>pwd</code> to see where you are currently). The argument of
+					<code>cd</code> can be an absolute path (e.g. <code>/usr/local/bin, /home/lyl/ics16</code>
+					)	or a relative path (e.g. <code>ics, ../ics, ~/test</code>, ~ means home directory) </p>
+				<h4><code>ls</code> command: List the directory</h4>
+				<p>Usage: <code>ls [option] [directory]</code></p>
+				<p>If directory is blank, it will list the current working directory. </p>
+				<p>If option is blank, it will just print all the names of files and directories under this directory. </p>
+				<p>If <code>-a</code> is presented, it will show all the files, including the hidden files. </p>
+				<div class="quotation">
+					Note: Unlike Windows,  a file or directory does not have a "hidden" attribute in Linux file system. If a file name starts with '.', it will
+					not be printed by <code>ls</code> by default.
+				</div>
+				<p>If <code>-l</code> is printed, it will print the directory in "long mode", for example:
+				<pre><code>gnoliyil@iZ28xee71h1Z:~/www/ics$ ls -al
+total 36
+drwxrwxr-x 6 gnoliyil gnoliyil 4096 Sep 21 19:15 .
+drwxr-xr-x 8 gnoliyil root     4096 Sep 20 22:19 ..
+drwxrwxr-x 8 gnoliyil gnoliyil 4096 Sep 21 22:08 .git
+-rw-rw-r-- 1 gnoliyil gnoliyil   23 Sep 21 19:04 .gitignore
+drwxrwxr-x 2 gnoliyil gnoliyil 4096 Sep 21 19:04 css
+drwxrwxr-x 2 gnoliyil gnoliyil 4096 Sep 20 22:18 images
+-rw-rw-r-- 1 gnoliyil gnoliyil 5829 Sep 21 19:15 index.htm
+drwxrwxr-x 2 gnoliyil gnoliyil 4096 Sep 21 19:13 prep
+</code></pre></p>
+			<p>It shows in the order of file permission, files in the dir., file owner, owner user group, file size, date of modification and the filename. </p>
+
+			<h4>File permission and <code>chmod</code> commannd</h4>
+
+			<h4>File manipulation: <code>cp, mv, touch</code></h4>
+
+			<h4>Tarballs and file compression: <code>tar, gzip, bzip2</code></h4>
+
+			<h3>Text manipulation</h3>
+			<h4>Nano editor: The simplest CLI-based editor</h4>
+			<h4>Vim editor: The Swiss army knife</h4>
+			<h4><code>grep</code>: find patterns in a file</h4>
+			<h4>Other automatic tools: <code>sed, gawk</code></h4>
+
+			<h3>Network</h3>
+			<h4>SSH: Secure shell</h4>
+			<h4>scp: copy over SSH protocol</h4>
+			<h4>sftp: secure ftp</h4>
+			<h4>Download in Linux: wget</h4>
+
+
+			<h3>Development tools</h3>
+			<h4>gcc: GNU C Compiler</h4>
+			<h4>gdb: GNU Debugger</h4>
+			<h4>make</h4>
 			</div>
+
 
 			<div class="article" id="article-contact">
 				<h2>联系方式</h2>
